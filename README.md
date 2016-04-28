@@ -3,7 +3,7 @@ About erlang
 
 Home: http://www.erlang.org/
 
-Package license: Erlang Public License 1.1 (http://www.erlang.org/EPLICENSE)
+Package license: Apache 2.0
 
 Feedstock license: BSD 3-Clause
 
