@@ -17,7 +17,7 @@ make
 #
 # https://github.com/conda-forge/erlang-feedstock/issues/1
 #
-if [ "$(uname)" == "Linux" ]
+if [ "$(uname)" == "Darwin" ]
 then
     make release_tests
     cd "${ERL_TOP}/release/tests/test_server"
