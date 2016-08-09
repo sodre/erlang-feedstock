@@ -6,8 +6,23 @@ export ERL_TOP="$(pwd)"
 ./configure --with-ssl="${PREFIX}" --prefix="${PREFIX}" --without-javac \
   --with-libatomic_ops="${PREFIX}" --enable-m${ARCH}-build
 make
-make release_tests
-cd "${ERL_TOP}/release/tests/test_server"
-${ERL_TOP}/bin/erl -s ts install -s ts smoke_test batch -s init stop
-cd ${ERL_TOP}
+
+# FIXME
+#
+# The tests appear to block upload on CircleCI.
+# So we skip them on the Linux build. It would
+# be nice to be able to run the tests again on
+# Linux. Best guess is we might be missing
+# some dependencies. See the linked issue.
+#
+# https://github.com/conda-forge/erlang-feedstock/issues/1
+#
+if [ "$(uname)" == "Linux" ]
+then
+    make release_tests
+    cd "${ERL_TOP}/release/tests/test_server"
+    ${ERL_TOP}/bin/erl -s ts install -s ts smoke_test batch -s init stop
+    cd ${ERL_TOP}
+fi
+
 make install
