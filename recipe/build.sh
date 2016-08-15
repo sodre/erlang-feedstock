@@ -3,6 +3,7 @@
 export LIBRARY_PATH="${PREFIX}/lib:${LIBRARY_PATH}"
 export LD_LIBRARY_PATH="${PREFIX}/lib:${LD_LIBRARY_PATH}"
 export ERL_TOP="$(pwd)"
+./otp_build autoconf
 ./configure --with-ssl="${PREFIX}" --prefix="${PREFIX}" --without-javac \
   --with-libatomic_ops="${PREFIX}" --enable-m${ARCH}-build
 make
