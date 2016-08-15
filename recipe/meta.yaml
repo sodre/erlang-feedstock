@@ -9,15 +9,15 @@ source:
   url: https://github.com/erlang/otp/archive/OTP-{{ version }}.tar.gz
   sha256: 8d5436faf37a1273c1b8529c4f02c28af0eccde31e52d474cb740b012d5da7e6
   patches:
-    # Adds a patch to pickup `perl` from the path instead of
-    # forcing it to come from `/usr/bin`. See PR for details.
+    # Adds a patch to pickup `perl` and `bash` from the path instead of
+    # forcing them to come from `/usr/bin`. See PR for details.
     #
-    # https://github.com/erlang/otp/pull/1097
+    # https://github.com/erlang/otp/pull/1056
     #
-    - PR_1097.diff
+    - PR_1056.diff
 
 build:
-  number: 6
+  number: 7
   skip: true  # [win]
 
 requirements:
