@@ -1,4 +1,4 @@
-{% set version = "18.3" %}
+{% set version = "19.0" %}
 
 package:
   name: erlang
@@ -7,17 +7,10 @@ package:
 source:
   fn: otp_src_{{ version }}.tar.gz
   url: https://github.com/erlang/otp/archive/OTP-{{ version }}.tar.gz
-  sha256: 8d5436faf37a1273c1b8529c4f02c28af0eccde31e52d474cb740b012d5da7e6
-  patches:
-    # Adds a patch to pickup `perl` and `bash` from the path instead of
-    # forcing them to come from `/usr/bin`. See PR for details.
-    #
-    # https://github.com/erlang/otp/pull/1056
-    #
-    - PR_1056.diff
+  sha256: 107b629aa7aea1bf76df0197629a50ce4fea61143ebb0e9a1b633b1fbaf9beb7
 
 build:
-  number: 7
+  number: 0
   skip: true  # [win]
 
 requirements:
