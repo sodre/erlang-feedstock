@@ -33,6 +33,7 @@ requirements:
 test:
   commands:
     - erl -version
+    - erlc
 
 about:
   home: http://www.erlang.org/
