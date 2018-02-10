@@ -19,16 +19,16 @@ requirements:
     - autoconf
     - m4
     - perl
-    - readline 6.2*
+    - readline 7.0
     - openssl 1.0.*
-    - ncurses 5.9*
-    - zlib 1.2.*
+    - ncurses 5.9
+    - zlib 1.2.11
     - libatomic_ops
   run:
-    - readline 6.2*
+    - readline 7.0
     - openssl 1.0.*
-    - ncurses 5.9*
-    - zlib 1.2.*
+    - ncurses 5.9
+    - zlib 1.2.11
     - libatomic_ops
 
 test:
