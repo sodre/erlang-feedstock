@@ -23,13 +23,12 @@ requirements:
     - openssl 1.0.*
     - ncurses 5.9
     - zlib 1.2.11
-    - libatomic_ops
+    - toolchain
   run:
     - readline 7.0
     - openssl 1.0.*
     - ncurses 5.9
     - zlib 1.2.11
-    - libatomic_ops
 
 test:
   commands:
