@@ -18,7 +18,7 @@ requirements:
   build:
     - autoconf 2.*
     - m4 1.4.*
-    - perl 5.22.2.1
+    - perl 5.20.3.1
     - readline 7.0
     - openssl 1.0.*
     - ncurses 5.9
