@@ -1,5 +1,5 @@
-{% set version = "21.0" %}
-{% set sha256 = "5a2d8e33c39a78a2dcc0c39bf9d2dfdf2974f0fad28385b4ede020a2321d643f" %}
+{% set version = "21.1" %}
+{% set sha256 = "7212f895ae317fa7a086fa2946070de5b910df5d41263e357d44b0f1f410af0f" %}
 
 package:
   name: erlang
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1001
+  number: 0
   skip: true  # [win]
 
 requirements:
