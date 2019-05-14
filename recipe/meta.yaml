@@ -1,5 +1,5 @@
-{% set version = "21.3" %}
-{% set sha256 = "64a6eea6c1dc2353ad80e29ef57f6ec4192c91478ac2b854d0417b6b2bf4d9bf" %}
+{% set version = "22.0" %}
+{% set sha256 = "7efb93a542d66137ba4f38f9734ee7b03adc17d949fac561cca3b2d8f6fafcd2" %}
 
 package:
   name: erlang
